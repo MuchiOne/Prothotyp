@@ -1,8 +1,8 @@
 package Menus;
 
-import Speicher.Speicher1.File1Aufrufen;
-import Speicher.Speicher2.File2Aufrufen;
-import Speicher.Speicher3.File3Aufrufen;
+import Speicher.SaveFile1.File1Aufrufen;
+import Speicher.SaveFile2.File2Aufrufen;
+import Speicher.SaveFile3.File3Aufrufen;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -71,10 +71,13 @@ public class SaveFileSelectMenu implements ActionListener {
             SFSmenuPannel.setVisible(false);
             new Hauptmenu();
         } else if (e.getSource() == SFS_File1Button) {
+            SFSmenuPannel.setVisible(false);
             new File1Aufrufen();
         } else if (e.getSource() == SFS_File2Button) {
+            SFSmenuPannel.setVisible(false);
             new File2Aufrufen();
         } else if (e.getSource() == SFS_File3Button) {
+            SFSmenuPannel.setVisible(false);
             new File3Aufrufen();
         }
     }

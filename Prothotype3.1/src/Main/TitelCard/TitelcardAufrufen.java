@@ -1,6 +1,7 @@
 package Main.TitelCard;
 
 import Main.Keylistener;
+import Main.Main;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,9 +17,7 @@ public class TitelcardAufrufen {
         MainFrame.setLayout(null);
         MainFrame.setExtendedState(Frame.MAXIMIZED_BOTH);
         MainFrame.setLocationRelativeTo(null);
-
         new Keylistener();
-
         Titelcardlabel.setIcon(titelcard);
         DrawTitelcard draw = new DrawTitelcard();
         draw.setVisible(true);
