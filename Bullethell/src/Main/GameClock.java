@@ -14,7 +14,9 @@ public class GameClock extends Thread {
             new CollisionCheck();
             new DrawPlayer();
             new BulletMove();
-            if (GameTimer==1000){
+            System.out.println(GameTimer);
+            if (GameTimer==2000){
+                System.out.println("You won");
                 System.exit(0);
             }
         }
